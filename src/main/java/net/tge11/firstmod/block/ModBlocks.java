@@ -45,6 +45,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
 
+    public static final DeferredBlock<Block> LIMINAL_RUG = registerBlock("liminal_rug",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
+
     public static final DeferredBlock<StairBlock> LIMINAL_STAIRS = registerBlock("liminal_stairs",
             () -> new StairBlock(LIMINAL_PLANKS.get().defaultBlockState(), liminalWoodProperties()));
 
@@ -68,6 +72,34 @@ public class ModBlocks {
 
     public static final DeferredBlock<ButtonBlock> LIMINAL_BUTTON = registerBlock("liminal_button",
             () -> new ButtonBlock(BlockSetType.OAK, 30, liminalButtonProperties()));
+
+    public static final DeferredBlock<Block> FLUORESCENT_LIGHTS = registerBlock("fluorescent_lights",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f)
+                    .sound(SoundType.GLASS)
+                    .lightLevel(state -> 12)));
+
+    private static BlockBehaviour.Properties liminalWoodProperties() {
+        return BlockBehaviour.Properties.of()
+                .strength(2.0f, 3.0f)
+                .sound(SoundType.WOOD)
+                .ignitedByLava();
+    }
+    private static BlockBehaviour.Properties liminalDoorProperties() {
+        return liminalWoodProperties().strength(3.0f).noOcclusion();
+    }
+
+    private static BlockBehaviour.Properties liminalTrapdoorProperties() {
+        return liminalWoodProperties().strength(3.0f).noOcclusion();
+    }
+
+    private static BlockBehaviour.Properties liminalPressurePlateProperties() {
+        return liminalWoodProperties().strength(0.5f).noCollission();
+    }
+
+    private static BlockBehaviour.Properties liminalButtonProperties() {
+        return liminalWoodProperties().strength(0.5f).noCollission();
+    }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

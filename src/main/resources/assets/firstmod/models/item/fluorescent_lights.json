@@ -1,0 +1,6 @@
+{
+  "parent": "firstmod:block/fluorescent_lights",
+  "textures": {
+    "all": "firstmod:block/fluorescent_lights"
+  }
+}

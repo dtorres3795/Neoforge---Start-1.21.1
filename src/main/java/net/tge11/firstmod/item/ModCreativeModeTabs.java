@@ -43,6 +43,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LIMINAL_PRESSURE_PLATE);
                         output.accept(ModBlocks.LIMINAL_BUTTON);
                         output.accept(ModBlocks.LIMINAL_BLOCK);
+                        output.accept(ModBlocks.LIMINAL_RUG);
+                        output.accept(ModBlocks.FLUORESCENT_LIGHTS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> OTHER_TAB = CREATIVE_MODE_TAB.register("other_tab",

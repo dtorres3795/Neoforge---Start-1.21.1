@@ -1,0 +1,6 @@
+{
+  "parent": "firstmod:block/liminal_rug",
+  "textures": {
+    "all": "firstmod:block/liminal_rug"
+  }
+}

@@ -131,6 +131,8 @@ public class FirstMod {
             event.accept(ModBlocks.LIMINAL_PRESSURE_PLATE);
             event.accept(ModBlocks.LIMINAL_BUTTON);
             event.accept(ModBlocks.LIMINAL_BLOCK);
+            event.accept(ModBlocks.LIMINAL_RUG);
+            event.accept(ModBlocks.FLUORESCENT_LIGHTS);
         }
     }
 
