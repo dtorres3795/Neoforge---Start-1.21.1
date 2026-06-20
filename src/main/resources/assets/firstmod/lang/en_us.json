@@ -1,0 +1,15 @@
+{
+  "item.firstmod.blight":  "Blight",
+  "item.firstmod.scream_mask":  "Scream Mask",
+  "item.firstmod.opal":  "Opal",
+
+  "block.firstmod.blight_block": "Block of Blight",
+  "block.firstmod.hollow": "Hollow",
+  "block.firstmod.opal_block": "Opal Block",
+  "block.firstmod.opal_ore": "Opal Ore",
+  "block.firstmod.liminal_planks": "Liminal Planks",
+
+  "creativetab.firstmod.dbd_items": "DBD Items",
+  "creativetab.firstmod.unorganized_blocks": "Unorganized Blocks",
+  "creativetab.firstmod.other": "Other"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "firstmod:block/blight_block",
+  "textures": {
+    "all": "firstmod:block/blight_block"
+  }
+}

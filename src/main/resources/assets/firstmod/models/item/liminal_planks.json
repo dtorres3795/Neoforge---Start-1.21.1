@@ -1,0 +1,6 @@
+{
+  "parent": "firstmod:block/liminal_planks",
+  "textures": {
+    "all": "firstmod:block/liminal_planks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "firstmod:block/opal_block",
+  "textures": {
+    "all": "firstmod:block/opal_block"
+  }
+}
