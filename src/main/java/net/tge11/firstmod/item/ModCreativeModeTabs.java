@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLIGHT);
                         output.accept(ModItems.SCREAM_MASK);
+                        output.accept(ModItems.BLIGHT_SYRINGE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> UNORGANIZED_BLOCKS_TAB = CREATIVE_MODE_TAB.register("unorganized_blocks_tab",
@@ -45,6 +46,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LIMINAL_BLOCK);
                         output.accept(ModBlocks.LIMINAL_RUG);
                         output.accept(ModBlocks.FLUORESCENT_LIGHTS);
+                        output.accept(ModBlocks.POOL_TILES);
+                        output.accept(ModBlocks.POOL_TILE_STAIRS);
+                        output.accept(ModBlocks.POOL_TILE_SLAB);
                     }).build());
 
     public static final Supplier<CreativeModeTab> OTHER_TAB = CREATIVE_MODE_TAB.register("other_tab",

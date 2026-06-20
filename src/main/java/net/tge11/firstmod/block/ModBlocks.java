@@ -79,6 +79,22 @@ public class ModBlocks {
                     .sound(SoundType.GLASS)
                     .lightLevel(state -> 12)));
 
+    public static final DeferredBlock<Block> POOL_TILES = registerBlock("pool_tiles",
+            () -> new Block(poolTileProperties()));
+
+    public static final DeferredBlock<StairBlock> POOL_TILE_STAIRS = registerBlock("pool_tile_stairs",
+            () -> new StairBlock(POOL_TILES.get().defaultBlockState(), poolTileProperties()));
+
+    public static final DeferredBlock<SlabBlock> POOL_TILE_SLAB = registerBlock("pool_tile_slab",
+            () -> new SlabBlock(poolTileProperties()));
+
+    private static BlockBehaviour.Properties poolTileProperties() {
+        return BlockBehaviour.Properties.of()
+                .strength(1.8f, 6.0f)
+                .requiresCorrectToolForDrops()
+                .sound(SoundType.STONE);
+    }
+
     private static BlockBehaviour.Properties liminalWoodProperties() {
         return BlockBehaviour.Properties.of()
                 .strength(2.0f, 3.0f)

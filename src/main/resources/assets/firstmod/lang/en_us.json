@@ -2,6 +2,10 @@
   "item.firstmod.blight":  "Blight",
   "item.firstmod.scream_mask":  "Scream Mask",
   "item.firstmod.opal":  "Opal",
+  "item.firstmod.blight_syringe": "Blight Syringe",
+  "effect.firstmod.blighted": "Blighted",
+  "key.firstmod.blight_dash": "Blight Dash",
+  "key.categories.firstmod": "TGE11 First Mod",
 
   "block.firstmod.blight_block": "Block of Blight",
   "block.firstmod.hollow": "Hollow",
@@ -19,6 +23,9 @@
   "block.firstmod.liminal_block": "Liminal Block",
   "block.firstmod.liminal_rug": "Liminal Rug",
   "block.firstmod.fluorescent_lights": "Fluorescent Lights",
+  "block.firstmod.pool_tiles": "Pool Tiles",
+  "block.firstmod.pool_tile_stairs": "Pool Tile Stairs",
+  "block.firstmod.pool_tile_slab": "Pool Tile Slab",
 
   "creativetab.firstmod.dbd_items": "DBD Items",
   "creativetab.firstmod.unorganized_blocks": "Unorganized Blocks",

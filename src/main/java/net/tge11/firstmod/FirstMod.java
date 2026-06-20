@@ -1,6 +1,10 @@
 package net.tge11.firstmod;
 
 import net.tge11.firstmod.block.ModBlocks;
+import net.tge11.firstmod.client.BlightDashClientEvents;
+import net.tge11.firstmod.client.ModKeyMappings;
+import net.tge11.firstmod.effect.ModEffects;
+import net.tge11.firstmod.network.ModNetwork;
 import net.tge11.firstmod.item.ModCreativeModeTabs;
 import net.tge11.firstmod.item.ModItems;
 import org.slf4j.Logger;
@@ -26,6 +30,8 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -70,6 +76,10 @@ public class FirstMod {
     public FirstMod(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(ModNetwork::register);
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            modEventBus.addListener(ModKeyMappings::registerKeyMappings);
+        }
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
@@ -82,8 +92,13 @@ public class FirstMod {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.register(net.tge11.firstmod.event.BlightDashHandler.class);
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            NeoForge.EVENT_BUS.register(BlightDashClientEvents.class);
+        }
 
         ModCreativeModeTabs.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -113,6 +128,7 @@ public class FirstMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLIGHT);
             event.accept(ModItems.SCREAM_MASK);
+            event.accept(ModItems.BLIGHT_SYRINGE);
             event.accept(ModItems.OPAL);
         }
 
@@ -133,6 +149,9 @@ public class FirstMod {
             event.accept(ModBlocks.LIMINAL_BLOCK);
             event.accept(ModBlocks.LIMINAL_RUG);
             event.accept(ModBlocks.FLUORESCENT_LIGHTS);
+            event.accept(ModBlocks.POOL_TILES);
+            event.accept(ModBlocks.POOL_TILE_STAIRS);
+            event.accept(ModBlocks.POOL_TILE_SLAB);
         }
     }
 
