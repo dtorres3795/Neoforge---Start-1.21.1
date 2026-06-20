@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "firstmod:block/pool_tiles",
+    "top": "firstmod:block/pool_tiles",
+    "side": "firstmod:block/pool_tiles"
+  }
+}
