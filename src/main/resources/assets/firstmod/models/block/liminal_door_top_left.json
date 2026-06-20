@@ -1,1 +1,7 @@
-{ "parent": "minecraft:block/door_top_left", "textures": { "bottom": "firstmod:block/liminal_planks", "top": "firstmod:block/liminal_planks" } }
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "firstmod:block/liminal_door_bottom",
+    "top": "firstmod:block/liminal_door_top"
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:block/door_bottom_left",
   "textures": {
-    "layer0": "firstmod:block/liminal_planks"
+    "bottom": "firstmod:block/liminal_door_bottom",
+    "top": "firstmod:block/liminal_door_top"
   }
 }
