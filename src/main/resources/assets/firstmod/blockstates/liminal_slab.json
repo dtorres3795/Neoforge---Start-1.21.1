@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "firstmod:block/liminal_slab"
+    },
+    "type=top": {
+      "model": "firstmod:block/liminal_slab_top"
+    },
+    "type=double": {
+      "model": "firstmod:block/liminal_planks"
+    }
+  }
+}

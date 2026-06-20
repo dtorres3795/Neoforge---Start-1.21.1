@@ -122,6 +122,15 @@ public class FirstMod {
             event.accept(ModBlocks.OPAL_BLOCK);
             event.accept(ModBlocks.OPAL_ORE);
             event.accept(ModBlocks.LIMINAL_PLANKS);
+            event.accept(ModBlocks.LIMINAL_STAIRS);
+            event.accept(ModBlocks.LIMINAL_SLAB);
+            event.accept(ModBlocks.LIMINAL_FENCE);
+            event.accept(ModBlocks.LIMINAL_FENCE_GATE);
+            event.accept(ModBlocks.LIMINAL_DOOR);
+            event.accept(ModBlocks.LIMINAL_TRAPDOOR);
+            event.accept(ModBlocks.LIMINAL_PRESSURE_PLATE);
+            event.accept(ModBlocks.LIMINAL_BUTTON);
+            event.accept(ModBlocks.LIMINAL_BLOCK);
         }
     }
 

@@ -34,6 +34,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OPAL_BLOCK);
                         output.accept(ModBlocks.OPAL_ORE);
                         output.accept(ModBlocks.LIMINAL_PLANKS);
+                        output.accept(ModBlocks.LIMINAL_STAIRS);
+                        output.accept(ModBlocks.LIMINAL_SLAB);
+                        output.accept(ModBlocks.LIMINAL_FENCE);
+                        output.accept(ModBlocks.LIMINAL_FENCE_GATE);
+                        output.accept(ModBlocks.LIMINAL_DOOR);
+                        output.accept(ModBlocks.LIMINAL_TRAPDOOR);
+                        output.accept(ModBlocks.LIMINAL_PRESSURE_PLATE);
+                        output.accept(ModBlocks.LIMINAL_BUTTON);
+                        output.accept(ModBlocks.LIMINAL_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> OTHER_TAB = CREATIVE_MODE_TAB.register("other_tab",

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "firstmod:block/liminal_planks",
+    "top": "firstmod:block/liminal_planks",
+    "side": "firstmod:block/liminal_planks"
+  }
+}

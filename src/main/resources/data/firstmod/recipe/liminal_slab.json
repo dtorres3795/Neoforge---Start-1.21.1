@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "firstmod:liminal_planks"
+    }
+  },
+  "result": {
+    "id": "firstmod:liminal_slab",
+    "count": 6
+  }
+}

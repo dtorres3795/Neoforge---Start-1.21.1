@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "firstmod:liminal_planks"
+    }
+  },
+  "result": {
+    "id": "firstmod:liminal_trapdoor",
+    "count": 2
+  }
+}
