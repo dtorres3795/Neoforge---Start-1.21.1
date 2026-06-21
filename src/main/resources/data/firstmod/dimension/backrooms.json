@@ -1,0 +1,18 @@
+{
+  "type": "firstmod:backrooms",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "firstmod:backrooms",
+      "features": false,
+      "lakes": false,
+      "layers": [
+        {
+          "block": "minecraft:air",
+          "height": 1
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

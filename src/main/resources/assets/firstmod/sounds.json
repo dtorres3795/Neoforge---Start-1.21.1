@@ -1,0 +1,30 @@
+{
+  "music.backrooms": {
+    "sounds": [
+      {
+        "name": "firstmod:music/backrooms/government_funding",
+        "stream": true
+      },
+      {
+        "name": "firstmod:music/backrooms/missing_persons",
+        "stream": true
+      },
+      {
+        "name": "firstmod:music/backrooms/pipes",
+        "stream": true
+      },
+      {
+        "name": "firstmod:music/backrooms/still_life",
+        "stream": true
+      },
+      {
+        "name": "firstmod:music/backrooms/the_complex",
+        "stream": true
+      },
+      {
+        "name": "firstmod:music/backrooms/youre_done_daisy_bell",
+        "stream": true
+      }
+    ]
+  }
+}
