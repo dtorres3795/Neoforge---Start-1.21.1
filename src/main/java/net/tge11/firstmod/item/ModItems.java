@@ -6,6 +6,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tge11.firstmod.FirstMod;
 import net.tge11.firstmod.item.custom.BlightSyringe;
+import net.tge11.firstmod.item.custom.BackroomsKeyItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FirstMod.MODID);
@@ -18,6 +19,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BLIGHT_SYRINGE = ITEMS.register("blight_syringe",
             () -> new BlightSyringe(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BACKROOMS_KEY = ITEMS.register("backrooms_key",
+            () -> new BackroomsKeyItem(new Item.Properties().stacksTo(1)));
 
 
 

@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLIGHT);
                         output.accept(ModItems.SCREAM_MASK);
                         output.accept(ModItems.BLIGHT_SYRINGE);
+                        output.accept(ModItems.BACKROOMS_KEY);
                     }).build());
 
     public static final Supplier<CreativeModeTab> UNORGANIZED_BLOCKS_TAB = CREATIVE_MODE_TAB.register("unorganized_blocks_tab",

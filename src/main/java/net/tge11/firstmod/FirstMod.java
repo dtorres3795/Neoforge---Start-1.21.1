@@ -5,6 +5,8 @@ import net.tge11.firstmod.client.BlightDashClientEvents;
 import net.tge11.firstmod.client.ModKeyMappings;
 import net.tge11.firstmod.effect.ModEffects;
 import net.tge11.firstmod.network.ModNetwork;
+import net.tge11.firstmod.sound.ModSounds;
+import net.tge11.firstmod.world.BackroomsMazeHandler;
 import net.tge11.firstmod.item.ModCreativeModeTabs;
 import net.tge11.firstmod.item.ModItems;
 import org.slf4j.Logger;
@@ -93,12 +95,14 @@ public class FirstMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         NeoForge.EVENT_BUS.register(net.tge11.firstmod.event.BlightDashHandler.class);
+        NeoForge.EVENT_BUS.register(BackroomsMazeHandler.class);
         if (FMLEnvironment.dist == Dist.CLIENT) {
             NeoForge.EVENT_BUS.register(BlightDashClientEvents.class);
         }
 
         ModCreativeModeTabs.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -129,6 +133,7 @@ public class FirstMod {
             event.accept(ModItems.BLIGHT);
             event.accept(ModItems.SCREAM_MASK);
             event.accept(ModItems.BLIGHT_SYRINGE);
+            event.accept(ModItems.BACKROOMS_KEY);
             event.accept(ModItems.OPAL);
         }
 
